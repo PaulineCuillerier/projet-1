@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lettering</title>
+    <link rel="stylesheet" href="styles/mains.css">
+    <link rel="stylesheet" href="styles/colorbox.css">
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery.lettering.js"></script>
+    <script src="scripts/jquery.colorbox-min.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+
+
+
+    <h1 class="fancy_title">This is about lettering</h1>
+
+    <a class='gallery' href='images/1.jpg'>Photo_1</a>
+    <div class="carre"></div>
+    <a class='gallery' href='images/2.jpg'>Photo_2</a>
+    <a class='gallery' href='images/3.jpg'>Photo_3</a>
+
+
+    <script>
+    $('a.gallery').colorbox({rel:'gal'});
+    </script>
+
+    <script>
+	  $(document).ready(function() {
+	    $(".fancy_title").lettering();
+	  });
+</script>
+
+  </body>
+</html>
